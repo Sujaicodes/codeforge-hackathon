@@ -143,15 +143,20 @@
   }
 
   // ── Enable generate button ───────────────────────────────
-  function checkReady() {
+function checkReady() {
     const hasResume = resumeText.trim().length > 10;
-    const hasJD = jdTextarea.value.trim().length > 20;
-    generateBtn.disabled = !(hasResume && hasJD);
-    generateBtn.textContent = hasResume && hasJD
-      ? 'Generate Pathway ↗'
-      : !hasResume
-        ? 'Upload your resume first…'
-        : 'Add a job description…';
+    const hasJD     = jdTextarea.value.trim().length > 20;
+    const ready     = hasResume && hasJD;
+
+    generateBtn.disabled        = !ready;
+    generateBtn.style.opacity   = ready ? '1' : '0.35';
+    generateBtn.style.background= ready ? 'var(--lime)' : 'rgba(255,255,255,0.08)';
+    generateBtn.style.color     = ready ? '#000' : 'rgba(255,255,255,0.3)';
+    generateBtn.style.border    = ready ? 'none' : '1px solid rgba(255,255,255,0.1)';
+
+    generateBtn.textContent = ready          ? 'Generate Pathway ↗'
+                            : !hasResume     ? 'Upload your resume first…'
+                            : 'Add a job description…';
   }
 
   // ── Generate pathway ─────────────────────────────────────
