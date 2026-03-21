@@ -16,7 +16,6 @@
 
 [![Live Demo](https://img.shields.io/badge/🚀_LIVE_DEMO-codeforge--hackathon.vercel.app-BEF264?style=for-the-badge&labelColor=0a0a0a)](https://codeforge-hackathon.vercel.app)
 [![Hackathon](https://img.shields.io/badge/🏆_CodeForge-Hackathon_2025-BEF264?style=for-the-badge&labelColor=0a0a0a)](https://github.com/Hack-Break/CodeForge-Hackathon)
-[![GitHub](https://img.shields.io/badge/⭐_GitHub-Hack--Break-white?style=for-the-badge&labelColor=0a0a0a)](https://github.com/Hack-Break/CodeForge-Hackathon)
 
 ---
 
